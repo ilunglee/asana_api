@@ -1,0 +1,45 @@
+AllCops:
+  TargetRubyVersion: 2.3.1
+  Include:
+    - '**/*.rb'
+
+Documentation:
+  Enabled: true
+Metrics/AbcSize:
+  Enabled: true
+Metrics/LineLength:
+  Max: 100
+Metrics/MethodLength:
+  Enabled: true
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - 'spec/**/*.rb'
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Style/OptionHash:
+  Enabled: true
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - 'Gemfile'
+    - '.overcommit_gems.rb'
+
+Bundler/OrderedGems:
+  Enabled: false

@@ -1,0 +1,15 @@
+.bundle/
+log/*.log
+pkg/
+
+# ignore .env
+.env
+
+# ignore debugger
+.byebug_history
+
+# ignore build
+*.gem
+
+# ignore cassette
+spec/support/vcr/*
